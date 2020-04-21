@@ -1,0 +1,184 @@
+// @media (max-width:575px){
+// 	.header-menu{
+// 		flex-direction: column;
+// 		display: none;
+// 		text-align: center;
+// 		&--active{
+// 			display: flex;
+// 		}
+// 		li{
+// 			line-height: 3;
+// 			margin-right: 0;
+// 		}
+// 		a{
+// 			display: block;
+// 			&::after{
+// 				display: none;
+// 			}
+// 		}
+// 		&-btn{
+// 			display: flex;
+// 		}
+
+// 	.header-menu-btn{
+// 		top:(-93px/2);
+// 	}
+
+// }
+@media (max-width:767px){
+	html{
+		font-size: 5px;
+	}
+	.header-menu{
+		flex-direction: column;
+		display: none;
+		text-align: center;
+		&--active{
+			display: flex;
+		}
+		li{
+			line-height: 3;
+			margin-right: 0;
+		}
+		a{
+			display: block;
+			&::after{
+				display: none;
+			}
+		}
+		&-btn{
+			display: flex;
+		}
+	}
+	.header-menu-btn{
+		top: (-30px/2);
+	}
+	.left-sidebar-menu{
+		display: none;
+		&--active{
+			display: block;
+		}
+		li{
+			&:hover{
+				background-color: transparent;
+			}
+		}
+	}
+	.left-sidebar-btn{
+		display: block;
+		&--active{
+			display: block;
+			&::after{
+				transform: rotate(225deg);
+			}
+		}
+	}
+	.left-sidebar-object{
+		display: none;
+	}
+	.btn-primary{
+		width: 100%;
+		text-align: center;
+	}
+	.footer{
+		&-copy{
+			text-align: center;
+			small{
+				margin:25px auto;
+			}
+		}
+		&-contacts{
+			text-align: left;
+			margin-top: 25px;
+		}
+		&-social-links{
+			text-align: left;
+			li{
+				margin-left: 0;
+				margin-right: 30px
+			}
+		}
+	}
+}
+@media (min-width: 768px) and (max-width: 991px){
+
+	html{
+		font-size: 5px;
+	}
+	.header-menu{
+		flex-direction: column;
+		display: none;
+		text-align: center;
+		&--active{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+		li{
+			line-height: 3;
+			margin-right: 0;
+		}
+		a{
+			display: block;
+			&::after{
+				display: none;
+			}
+		}
+		&-btn{
+			display: flex;
+		}
+	}
+	.header-menu-btn{
+		top: (-30px/2);
+	}
+	.left-sidebar-menu{
+		display: none;
+		&--active{
+			display: block;
+		}
+		li{
+			&:hover{
+				background-color: transparent;
+			}
+		}
+	}
+	.left-sidebar-btn{
+		display: block;
+		&--active{
+			display: block;
+			&::after{
+				transform: rotate(225deg);
+			}
+		}
+	}
+	.left-sidebar-object{
+		display: none;
+	}
+	.btn-primary{
+		width: 100%;
+		text-align: center;
+	}
+	.footer{
+		&-copy{
+			small{
+				margin:25px 0;
+			}
+		}
+		&-contacts{
+			text-align: left;
+			margin-top: 25px;
+		}
+		&-social-links{
+			text-align: left;
+			li{
+				margin-left: 0;
+				margin-right: 30px
+			}
+		}
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px){
+	.header-menu{
+		margin-top: 10px;
+	}
+}
