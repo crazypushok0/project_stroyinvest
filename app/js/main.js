@@ -20,24 +20,17 @@ $(document).ready(function() {
 		        slidesToScroll: 1
 		      }
 		    }
-		    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
 			
 	});
 
-	let menuBtn = $('.header-menu-btn');
-	let sidebarBtn = $('.left-sidebar-btn');
-	let menu = $('.header-menu');
-	let sidebarmenu = $('.left-sidebar-menu');
-	menuBtn.on('click', function(event) {
+	$('.header-menu-btn').on('click', function(event) {
 		event.preventDefault();
-		menu.toggleClass('header-menu--active');
+		$('.header-menu').toggleClass('header-menu--active');
 	});
-	sidebarBtn.on('click', function(event) {
+	$('.left-sidebar-btn').on('click', function(event) {
 	event.preventDefault();
-	sidebarmenu.toggleClass('left-sidebar-menu--active');
-	sidebarBtn.toggleClass('left-sidebar-btn--active');
+	$('.left-sidebar-menu').toggleClass('left-sidebar-menu--active');
+	$('.left-sidebar-btn').toggleClass('left-sidebar-btn--active');
 	});
 });
