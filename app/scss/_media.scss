@@ -23,9 +23,6 @@
 			display: flex;
 		}
 	}
-	// .header-menu-btn{
-	// 	top:(-93px/2);
-	// }
 	.left-sidebar-menu{
 		display: none;
 		&--active{
@@ -49,10 +46,6 @@
 	.left-sidebar-object{
 		display: none;
 	}
-	.btn-primary{
-		width: 100%;
-		text-align: center;
-	}
 	.footer{
 		&-copy{
 			text-align: center;
@@ -73,7 +66,6 @@
 		}
 	}
 }
-
 @media (min-width: 768px) and (max-width: 991px){
 
 	html{
@@ -103,9 +95,6 @@
 			display: flex;
 		}
 	}
-	// .header-menu-btn{
-	// 	top:(-93px/2)
-	// }
 	.left-sidebar-menu{
 		display: none;
 		&--active{
@@ -128,10 +117,6 @@
 	}
 	.left-sidebar-object{
 		display: none;
-	}
-	.btn-primary{
-		width: 100%;
-		text-align: center;
 	}
 	.footer{
 		&-copy{
