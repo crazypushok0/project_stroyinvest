@@ -116,7 +116,7 @@
 							<div class="col-md-6">
 								<div class="calc-programms">
 									<div class="calc-radio">
-										<input type="radio" name="programms" id="first">
+										<input type="radio" data-month="6" data-per="0.2" checked name="programms" id="first">
 										<label for="first">
 											<span>
 												20% годовых
@@ -126,7 +126,7 @@
 									</div>
 									<!-- /.calc-radio -->
 									<div class="calc-radio">
-										<input type="radio" name="programms" id="seconde">
+										<input type="radio" data-month="12" data-per="0.24" name="programms" id="seconde">
 										<label for="seconde">
 											<span>
 												24% годовых
@@ -136,7 +136,7 @@
 									</div>
 									<!-- /.calc-radio -->
 									<div class="calc-radio">
-										<input type="radio" name="programms" id="third">
+										<input type="radio" data-month="24" data-per="0.26" name="programms" id="third">
 										<label for="third">
 											<span>
 												26% годовых
@@ -146,7 +146,7 @@
 									</div>
 									<!-- /.calc-radio -->
 									<div class="calc-radio">
-										<input type="radio" name="programms" id="fourth">
+										<input type="radio" data-month="36" data-per="0.28" name="programms" id="fourth">
 										<label for="fourth">
 											<span>
 												28% годовых
@@ -156,7 +156,7 @@
 									</div>
 									<!-- /.calc-radio -->
 									<div class="calc-radio">
-										<input type="radio" name="programms" id="fifth">
+										<input type="radio" data-month="48" data-per="0.32" name="programms" id="fifth">
 										<label for="fifth">
 											<span>
 												32% годовых
@@ -170,10 +170,30 @@
 									<!-- /.calc-radio -->
 								</div>
 								<!-- /.calc-programms -->
+								<div class="calc-legal">
+									<p>*Наша компания является налоговым агентом, удерживает и оплачивает НДФЛ Вся информация, размещенная на сайте, несет исключительно рекламный характер и не является публичной офертой.</p>
+								</div>
+								<!-- /.calc-legal -->
 							</div>
 							<!-- /.col-md-6 -->
 							<div class="col-md-6">
-
+								<h4>Укажите сумму инвестиций</h4>
+								<input class="calc-range" type="text" name="summ">
+								<div class="calc-summ_invest">
+									<span class="calc-summ_invest_label">Сумма:</span>
+									<span class="calc-summ_invest_num"><span>100 000</span> руб.</span>
+								</div>
+								<!-- /.calc-summ_invist -->
+								<div>
+									<span class="calc-total">
+										<strong><span>110 000</span> руб.</strong><br>
+										<small>Сумма через <span>6 месяцев</span></small>
+									</span>
+									<span class="calc-monthly">
+										<strong><span>1 666</span> руб.</strong><br>
+										<small>Ежемесячный доход</small>
+									</span>
+								</div>
 							</div>
 							<!-- /.col-md-6 -->
 						</div>
