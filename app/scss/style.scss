@@ -381,4 +381,48 @@ li.left-sidebar-menu--active{
 	}
 }
 
+//section investments
+.investments-links{
+	margin-top: 36px;
+}
+.investments-link{
+	display: block;
+	text-decoration: underline;
+	color:$active-color;
+	margin-bottom: 15px;
+}
+.calc{
+	&-programms{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&-radio{
+		flex-basis: 50%;
+		input[type="radio"]{
+			display: none;
+			&:checked{
+				&+label::before{
+					background-color: $active-color;
+				}
+			}
+		}
+		label{
+			margin-bottom: 20px;
+			display: inline-block;
+			&::before{
+				content:'';
+				width: 24px;
+				height: 24px;
+				box-shadow: 0px 5px 10px 0 rgba(0, 0, 1, 0.1);
+				background-color: $white;
+				display: inline-block;
+				border: 7px solid $white;
+				vertical-align: middle;
+				border-radius: 50%;
+				transition: all .1s;
+			}
+		}
+	}
+}
+
 @import 'media';
