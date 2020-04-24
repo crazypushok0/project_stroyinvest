@@ -524,4 +524,129 @@ li.left-sidebar-menu--active{
 	}
 }
 
+//Section category
+.category {
+	.object-card {
+		background-color: $white;
+		margin-bottom: 30px;
+		transition: all .2s;
+		&:hover{
+			box-shadow: 0px 5px 10px 0 rgba(0, 0, 1, 0.1);
+		}
+		a{
+			display: block;
+		}
+		&_img{
+			width: 100%;
+			object-fit:cover;
+		}
+		&_text{
+			padding: 30px;
+		}
+		&_title {
+			font-size: 16px;
+			color:$active-color;
+		}
+		p{
+			line-height: 1.43;
+
+		}
+		&_price {
+			color:$active-color;
+			font-size: 20px;
+			font-weight: 700;
+			text-align: center;
+		}
+		&_btn{
+			width: 100%;
+			margin-top: 0;
+			text-align: center;
+			margin-bottom: 26px;
+		}
+		&_more {
+			text-align: center;
+			text-decoration: underline;
+			color:$dark;
+		}
+	}
+}
+//Section object-page
+.object-page{
+	&_gallery{
+		float: right;
+	}
+	&_text{
+		a{
+			color:$active-color;
+		}
+	}
+}
+
+//Modal windows
+
+.modal {
+	display: none;
+	background-color: rgba(0,0,0, .4);
+	position: fixed;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	&-content {
+		position: relative;
+		background-color: $white;
+		padding: 30px 50px;
+		width: 100%;
+		max-width: 370px;
+		margin: 50px auto;
+		text-align: center;
+		box-shadow: 0 12px 24px rgba(0, 0, 1, .18);
+		h4{
+			color: $active-color;
+			font-size: 18px;
+			margin: 0 0 14px;
+		}
+		.close{
+			position: absolute;
+			right: 15px;
+			top: 15px;
+			font-size: 20px;
+			line-height: 1;
+			cursor: pointer;
+			opacity: .5;
+		}
+		p{
+			font-size: 12px;
+			margin: 0;
+		}
+	}
+	&-form {
+		margin-top: 37px;
+		input{
+			display: block;
+			width: 100%;
+			border: 1px solid rgba($dark, .15);
+			border-radius: 4px;
+			padding: 20px;
+			font-size: 15px;
+			color:$dark;
+			margin-bottom: 10px;
+		}
+		&_btn{
+			display: block;
+			width: 100%;
+			margin-top: 0;
+			margin-bottom: 20px;
+		}
+		small{
+			font-size: 12px;
+			a{
+				color:$active-color;
+			}
+		}
+	}
+}
+
+
+
 @import 'media';

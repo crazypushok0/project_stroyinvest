@@ -22,6 +22,7 @@
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {
+    "bootstrap-4-grid": "^3.4.0",
     "powerange": "github:abpetkov/powerange"
   }
 }

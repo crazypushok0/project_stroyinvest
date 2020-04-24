@@ -36,6 +36,7 @@ gulp.task('script', function(){
 gulp.task('style', function(){
     return gulp.src([
         'node_modules/normalize.css/normalize.css',
+        'node_modules/bootstrap-4-grid/css/grid.css',
         'node_modules/slick-carousel/slick/slick.css',
         'node_modules/powerange/dist/powerange.css'
 
