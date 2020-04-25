@@ -1,3 +1,5 @@
+	var elem = document.querySelector('.calc-range');
+	var init = new Powerange(elem, { min: 100000, max: 3000000, start: 100000, hideRange:true, step: 100000 });
 
 $(document).ready(function() {
 	$(".directions-blocks").slick({
@@ -34,8 +36,6 @@ $(document).ready(function() {
 	$('.left-sidebar-btn').toggleClass('left-sidebar-btn--active');
 	});
 
-	var elem = document.querySelector('.calc-range');
-	var init = new Powerange(elem, { min: 100000, max: 3000000, start: 100000, hideRange:true, step: 100000 });
 	var per, month, result, total, monthly;
 	var money = +$ ('.calc-range').val();
 

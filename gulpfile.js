@@ -34,8 +34,8 @@ gulp.task('main', function(){
 });
 gulp.task('script', function(){
     return gulp.src([
-        'node_modules/slick-carousel/slick/slick.js',
-        'node_modules/powerange/dist/powerange.js'
+        'node_modules/powerange/dist/powerange.js',
+        'node_modules/slick-carousel/slick/slick.js'
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
